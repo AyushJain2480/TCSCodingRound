@@ -35,5 +35,7 @@ public class Main
 	// When the index is not equal to -1 means the string is present in the first string as a substring
 	public static boolean isRotation(String str , String afterRotation){
 	    return (str.length() == afterRotation.length() && (str + str).indexOf(afterRotation) != -1);
+            // we can also use 
+            // return (str.length() == afterRotation.length() && (str + str).contains(afterRotation));
 	}
 }
